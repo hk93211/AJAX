@@ -62,8 +62,21 @@ function createXmlHttp(){
  ```
   
 ## 7.jQuery发送网络请求
-
-  
+ajax方法
+```
+  $.ajax({
+                "url":"02-jQuery-network.php",
+                "data":"username=zhangsan&password=123456",
+                "success":function (data) {
+                    console.log("成功" + data);
+                },
+                "error":function (dataCode) {
+                    console.log("失败" + dataCode);
+                },
+                "type":"POST"
+            }
+        )
+  ```
   
   
   
